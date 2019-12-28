@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Home
+		</title>
+	</head>
+	<body>
+		<h1>Home page</h1>
+		{% for post in postList %}
+			<h4>Author name: {{ post.author }}</h4>
+			<h4>Subject name: {{ post.subject }}</h4>
+			<h4>Class: {{ post.class }}</h4>
+		{% endfor %}
+	</body>
+</html>
