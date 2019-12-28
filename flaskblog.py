@@ -39,7 +39,8 @@ def home():
 
 @app.route("/about")
 def about():
-	return render_template('about.html')
+	return render_template('about.html',postList=posts)
+	#return render_template('about.html')
 
 	
 #This condition is true only if script is run directly.
