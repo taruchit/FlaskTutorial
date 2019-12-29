@@ -19,3 +19,6 @@ Inside the folder we created two files: home.html and about.html
 Then, we imported render_template function in flaskblog.py.
 Finally, in /home route, we called render_template() and passed the file home.html as the argument.
 
+Now, we will learn if else: -
+We write if else condition in title. If the condition is met then parameter sent along with function is displayed.
+If the condition is not met, then else gets executed and default string gets displayed.

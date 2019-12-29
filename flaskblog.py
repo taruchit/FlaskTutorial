@@ -39,7 +39,7 @@ def home():
 
 @app.route("/about")
 def about():
-	return render_template('about.html',postList=posts)
+	return render_template('about.html',postList=posts, title='About')
 	#return render_template('about.html')
 
 	
