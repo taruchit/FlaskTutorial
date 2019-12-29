@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		{% if title %}
-			<title>Flask blog - {{ title }} </title>
-		{% else %}
-			<title>Flask blog </title>
-		{% endif %}
-	</head>
-	<body>
-		<h1>Home page</h1>
-		<br>
-		{% for post in postList %}
-			<h4>Author name: {{ post.author }}</h4>
-			<h4>Subject name: {{ post.subject }}</h4>
-			<h4>Class: {{ post.class }}</h4>
-		{% endfor %}
-	</body>
-</html>
+{% extends "layout.html" %}
+{% block maincontent %}
+	<h1>Home page</h1>
+{% endblock maincontent %}
+{% block content %}
+	{% for post in postList %}
+		<h4>Author name: {{ post.author }}</h4>
+		<h4>Subject name: {{ post.subject }}</h4>
+		<h4>Class: {{ post.class }}</h4>
+	{% endfor %}
+{% endblock content %}
