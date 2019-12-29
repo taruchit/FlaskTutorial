@@ -22,3 +22,10 @@ Finally, in /home route, we called render_template() and passed the file home.ht
 Now, we will learn if else: -
 We write if else condition in title. If the condition is met then parameter sent along with function is displayed.
 If the condition is not met, then else gets executed and default string gets displayed.
+
+Now, we will remove duplicate content from templates: - Template Inheritance
+1. We create layout.html, and pick all the repeated sections between the two templates (home and about)
+2. We create a block in body tag of layout.html.
+3. Now, we will inherit the layout template in home and about template.
+4. In home.html, we need to overwrite content with the for loop.
+

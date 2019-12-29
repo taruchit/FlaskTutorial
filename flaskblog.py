@@ -34,13 +34,13 @@ posts=[
 @app.route("/")
 @app.route("/home")
 def home():
-	return render_template('home.html',postList=posts)
+	return render_template('home.html',title='Home', postList=posts)
 
 
 @app.route("/about")
 def about():
-	return render_template('about.html',postList=posts, title='About')
-	#return render_template('about.html')
+	return render_template('about.html', title='About')
+	
 
 	
 #This condition is true only if script is run directly.
