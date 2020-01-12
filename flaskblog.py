@@ -1,5 +1,5 @@
 #import Flask class from flask
-from flask import Flask, render_template 
+from flask import Flask, render_template, url_for 
 #app variable is created and setting it to instance of Flask class
 # __name__ is a special variable name in Python used to name the module
 #Thus, it helps to instantiate Flask in app variable.

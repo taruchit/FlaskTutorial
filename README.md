@@ -29,3 +29,9 @@ Now, we will remove duplicate content from templates: - Template Inheritance
 3. Now, we will inherit the layout template in home and about template.
 4. In home.html, we need to overwrite content with the for loop.
 
+Learning about use of Bootstrap: -
+
+1. In layout.html, we added the required bootstrap css. Thus, it will help to use bootstrap across multiple pages easily.
+2. In layout.html, we added the JS code in body tag required for bootstrap.
+3. Now we added the content inside Bootstrap class "container".
+4. url_for in Flask is used for creating a URL to prevent the overhead of having to change URLs throughout an application (including in templates). Without url_for , if there is a change in the root URL of our app then we have to change it in every page where the link is present.
