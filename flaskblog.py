@@ -24,7 +24,7 @@ posts=[
 ]
 
 
-
+counter=1
 
 #routes are content we type in URL of browzer for going to different pages.
 #@app.route decorator helps to navigate and show correct content on UI.
@@ -39,7 +39,10 @@ def home():
 
 @app.route("/about")
 def about():
-	return render_template('about.html', title='About')
+	global counter
+	counter +=1
+	#return render_template('about.html', title='About')
+	return render_template('about.html', contents=counter)
 	
 
 	
