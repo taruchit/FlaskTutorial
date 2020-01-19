@@ -35,3 +35,9 @@ Learning about use of Bootstrap: -
 2. In layout.html, we added the JS code in body tag required for bootstrap.
 3. Now we added the content inside Bootstrap class "container".
 4. url_for in Flask is used for creating a URL to prevent the overhead of having to change URLs throughout an application (including in templates). Without url_for , if there is a change in the root URL of our app then we have to change it in every page where the link is present.
+
+Adding Navigation menu: -
+
+1. In layout.html, we add html code for our navigation.
+2. In href, url_for is used to give the path.
+
