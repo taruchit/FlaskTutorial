@@ -29,10 +29,26 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Contact us</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('register')}}">Register here</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('login')}}">Login</a>
+						</li>
 					</ul>
 				</nav>
 			
 			{% block maincontent %}{% endblock %}
+			
+			{% with messages = get_flashed_messages(with_categories=true) %}
+				{% if messages %}
+					{% for category, message in messages %}
+						<div class="alert alert={{category}}">
+							{{ message }}
+						</div>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
 			{% block content %}{% endblock %}
 		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
