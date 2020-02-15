@@ -41,3 +41,18 @@ Adding Navigation menu: -
 1. In layout.html, we add html code for our navigation.
 2. In href, url_for is used to give the path.
 
+Learning about forms in Flask: -
+
+We will use a plugin which helps to build form functionality: wtf (wtforms)
+
+pip install flask-wtf
+
+Then we created another application file for forms: forms.py
+
+We import FlaskForm from flask_wtf; and import StringField from wtforms.
+
+Then we use Python classes which will represent html forms.
+
+Validators are used to apply checks on the inputs entered by the user.
+
+We will use secret key to protect our application from attacks.
